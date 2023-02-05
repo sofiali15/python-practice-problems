@@ -4,14 +4,20 @@ def num_divisible(lb, ub, p, q):
     or divisible by q, but not divisible by both p and q.
     """
 
-    ### YOUR CODE GOES HERE
+    count = 0
+    for num in range(lb, ub + 1):
+        divisible_by_one = (num % p == 0 or num % q == 0)
+        divisible_by_both = (num % p == 0 and num % q == 0)
+        if divisible_by_one and not divisible_by_both:
+            count = count + 1
+            
     # Replace the following line with your code.
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise.
-    n = None
+    n = count
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
-    return 
+    return n
 
 
 #############################################################
