@@ -4,11 +4,17 @@ def number_string(x):
     (depending on whether the number is positive, negative, or zero)
     """
 
-    ### YOUR CODE GOES HERE
+    if x < 0:
+        return "NEGATIVE"
+    elif x > 0:
+        return "POSITIVE"
+    elif x == 0:
+        return "ZERO"
+
     # Replace the following line with your code.
     # After running your code, variable s should contain the value
     # we ask you to compute in this exercise.
-    s = None
+    s = x
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return s
